@@ -13,7 +13,7 @@ cap = cv2.VideoCapture(0)
 noseImage = cv2.imread("pigNose2.png")
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat") #google for this file and download it from github.
 
 while True:
     _, frame = cap.read()
